@@ -19,6 +19,7 @@ chmod +x /usr/local/bin/docker-compose
 ```
 ```
 vim /etc/sudoers
+root ALL=(ALL:ALL)ALL
 app ALL=(ALL:ALL)ALL
 ```
 ```
