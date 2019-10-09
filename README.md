@@ -3,7 +3,11 @@
 > Minimal stack for VM deployment.
 
 ## Getting started
-
+```
+groupadd app
+useradd -d /home/app -s `which bash` -g app -m app
+apt update
+```
 ### Install ruby with rvm
 
 ```
