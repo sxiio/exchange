@@ -1,0 +1,25 @@
+version: '3.6'
+
+services:
+  proxy:
+    image: traefik:1.7.6
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../config/traefik.toml:/etc/traefik/traefik.toml:ro
+      - ../config/acme.json:/acme.json
+    networks:
+      default:
+        aliases:
+          - trade.bitas.net
+          - peatio.bitas.net
+          - ws.ranger.bitas.net
+          - eth.bitas.net
+          - tower.bitas.net
+          - monitor.bitas.net
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: 'Host: monitor.bitas.net'
+      traefik.port: 8080

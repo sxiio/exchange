@@ -1,0 +1,16 @@
+---
+strategy:
+  type: copy
+  pair: ETHUSD
+  target:
+    driver: rubykube
+    host: http://www.app.local
+    name: John
+    key: changeme
+    secret: changeme
+  sources:
+  - driver: bitfinex
+    name: Joe
+    key: changeme
+    secret: changeme
+

@@ -1,0 +1,29 @@
+# List of Barong administrators.
+#
+# Other parameters that you can set here can be found in Account,
+# Profile and Phone models (e.g. app/models/account.rb...); all the
+# model properties are listed at the very bottom of this models files.
+#
+# Note: email is the only required field here.
+users:
+  - email: admin@bitas.net
+    password: Pu!tS1!gPS@r
+    role: admin
+    state: active
+    level: 3
+  - email: john@bitas.net
+    password: Pu!tS1!gPS@r
+    role: member
+    state: active
+    level: 3
+
+levels:
+  - key: email
+    value: verified
+    description: "User clicked on the confirmation link"
+  - key: phone
+    value: verified
+    description: "User entered a valid code from sms"
+  - key: document
+    value: verified
+    description: "User personal documents have been verified"
