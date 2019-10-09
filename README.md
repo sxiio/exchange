@@ -1,4 +1,4 @@
-# MicroKube
+# SXI LLC EXCHANGE SCRIPT
 
 > Minimal stack for VM deployment.
 
