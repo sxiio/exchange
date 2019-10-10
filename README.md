@@ -1,6 +1,6 @@
 # SXI LLC EXCHANGE SCRIPT
 
-> Minimal stack for VM deployment.
+> Buy now $499 https://sxi.io/members/cart.php?gid=17
 
 ## Getting started
 ```
